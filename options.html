@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Translator 设置</title>
+  <style>
+    body {
+      padding: 20px;
+      width: 500px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 15px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .api-key-group {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h2>翻译设置</h2>
+  <div class="form-group">
+    <label>AI 模型：</label>
+    <select id="siliconflowModel">
+      <option value="Pro/deepseek-ai/DeepSeek-V3">DeepSeek V3</option>
+    </select>
+  </div>
+
+  <div class="api-key-group">
+    <h3>API 设置</h3>
+    <div class="form-group">
+      <label>SiliconFlow API Key：</label>
+      <input type="text" id="siliconflowKey" placeholder="输入您的 SiliconFlow API Key">
+    </div>
+    <div class="form-group">
+      <label>SiliconFlow API URL：</label>
+      <input type="text" id="siliconflowUrl" placeholder="输入 SiliconFlow API 地址">
+    </div>
+  </div>
+
+  <button id="save">保存设置</button>
+
+  <script src="options.js"></script>
+</body>
+</html>
